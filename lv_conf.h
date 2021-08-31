@@ -61,10 +61,10 @@
  *====================*/
 
 /*Default display refresh period. LVG will redraw changed ares with this period time*/
-#define LV_DISP_DEF_REFR_PERIOD     30      /*[ms]*/
+#define LV_DISP_DEF_REFR_PERIOD     17      /*[ms]*/
 
 /*Input device read period in milliseconds*/
-#define LV_INDEV_DEF_READ_PERIOD    30      /*[ms]*/
+#define LV_INDEV_DEF_READ_PERIOD    5      /*[ms]*/
 
 /*Use a custom tick source that tells the elapsed time in milliseconds.
  *It removes the need to manually update the tick with `lv_tick_inc()`)*/
@@ -131,6 +131,8 @@ e.g. "stm32f769xx.h" or "stm32f429xx.h"*/
 
 /*Use NXP's VG-Lite GPU iMX RTxxx platforms*/
 #define LV_USE_GPU_NXP_VG_LITE   0
+
+#define LV_USE_GPU_SDL           1
 
 /*-------------
  * Logging
